@@ -21,6 +21,7 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Quick Links</h4>
             <ul>
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/contact">Contact</Link></li>
@@ -30,7 +31,8 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <p>Anamwino Complex, City Centre</p>
             <p>P.O. Box 3186, Lilongwe</p>
-            <p>sales@cll.mw</p>
+            <p>charlesmwale.mw@gmail.com</p>
+            <p>+265 0 999 150 433</p>
           </div>
         </div>
         <div className="footer-bottom">

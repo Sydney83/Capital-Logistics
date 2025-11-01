@@ -41,15 +41,84 @@ const Services = () => {
     }
   ];
 
+  const cargoTypes = [
+    {
+      category: "Agricultural Produce",
+      description: "Specialized transportation for bulk agricultural products with careful handling to preserve quality and freshness.",
+      items: ["Sugar", "Maize", "Beans", "Soya", "Other farm outputs"],
+      features: [
+        "Quality preservation during transit",
+        "Timely delivery to markets",
+        "Bulk handling expertise",
+        "Temperature control options"
+      ],
+      image: "/Images/4.jpeg"
+    },
+    {
+      category: "Industrial Goods",
+      description: "Safe and secure transport of heavy machinery, industrial equipment, and essential raw materials.",
+      items: ["Heavy machinery", "Essential spare parts", "Raw materials", "Industrial equipment"],
+      features: [
+        "Secure loading & unloading",
+        "Heavy-duty equipment",
+        "Safe transit protocols",
+        "Timely factory deliveries"
+      ],
+      image: "/Images/5.jpeg"
+    },
+    {
+      category: "FMCG Products",
+      description: "Efficient transportation of fast-moving consumer goods with careful handling to maintain product quality.",
+      items: ["Packaged foods", "Beverages", "Personal care", "Household items"],
+      features: [
+        "Careful handling procedures",
+        "Freshness preservation",
+        "Efficient delivery systems",
+        "Stock level maintenance"
+      ],
+      image: "/Images/6.jpeg"
+    },
+    {
+      category: "Construction Materials",
+      description: "Reliable transportation for construction supplies and building materials to support projects.",
+      items: ["Cement", "Steel", "Bricks", "Iron sheets", "Building supplies"],
+      features: [
+        "Safe material handling",
+        "Secure transit",
+        "On-time site delivery",
+        "Project timeline support"
+      ],
+      image: "/Images/7.jpeg"
+    },
+    {
+      category: "Beverages",
+      description: "Specialized transportation for all types of beverages ensuring product freshness and quality.",
+      items: ["Bottled water", "Soft drinks", "Juices", "Alcoholic drinks"],
+      features: [
+        "Proper handling protocols",
+        "Freshness maintenance",
+        "Timely market delivery",
+        "Quality assurance"
+      ],
+      image: "/Images/8.jpeg"
+    }
+  ];
+
   return (
     <>
       <Hero 
         title="Our Services"
-        subtitle="Comprehensive logistics solutions tailored to your business needs"
+        subtitle="Comprehensive logistics solutions including transportation, warehousing, distribution, and specialized cargo handling"
       />
 
+      {/* Main Services Section */}
       <section className="section">
         <div className="container">
+          <div className="services-header">
+            <h2>Core Logistics Services</h2>
+            <p className="services-subtitle">End-to-end solutions for all your logistics needs</p>
+          </div>
+          
           <div className="services-detail">
             {services.map((service, index) => (
               <div key={index} className="service-detail-card">
@@ -71,7 +140,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Updated Capacity Section */}
+      {/* Capacity Section */}
       <section className="section capacity-section">
         <div className="container">
           <div className="capacity-header">
@@ -140,6 +209,66 @@ const Services = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          {/* Cargo Portfolio Section - Minimal Design */}
+      <section className="section cargo-portfolio-section">
+        <div className="container">
+          <div className="cargo-header-minimal">
+            <h2>Cargo Portfolio</h2>
+            <div className="section-divider"></div>
+          </div>
+
+          <div className="cargo-grid-minimal">
+            {cargoTypes.map((cargo, index) => (
+              <div key={index} className="cargo-card-minimal">
+                <div className="cargo-image-minimal">
+                  <img src={cargo.image} alt={cargo.category} />
+                </div>
+                <div className="cargo-content-minimal">
+                  <h3>{cargo.category}</h3>
+                  <div className="content-divider"></div>
+                  <p className="cargo-description-minimal">{cargo.description}</p>
+                  
+                  <div className="cargo-details-minimal">
+                    <div className="cargo-items-minimal">
+                      <h4>Items We Transport</h4>
+                      <div className="items-list-minimal">
+                        {cargo.items.map((item, itemIndex) => (
+                          <span key={itemIndex} className="item-tag-minimal">{item}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="section stats-section">
+        <div className="container">
+          <div className="stats-grid">
+            <div className="stat-card">
+              <div className="stat-number">500+</div>
+              <div className="stat-label">Successful Deliveries</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">50+</div>
+              <div className="stat-label">Satisfied Clients</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">98%</div>
+              <div className="stat-label">On-Time Delivery Rate</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">4+</div>
+              <div className="stat-label">Years Experience</div>
             </div>
           </div>
         </div>
