@@ -99,12 +99,12 @@ const Header = () => {
                 </div>
                 <div className="contact-item">
                   <strong>Email:</strong>
-                  <div>charlesmwale.mw@gmail.com</div>
+                  <div>sales@cll.mw</div>
                 </div>
               </div>
-              <button className="mobile-cta-button" onClick={closeMenu}>
-                Get In Touch
-              </button>
+              <Link to="/Contact" className="mobile-cta-button">
+  Get In Touch
+</Link>
             </div>
           </div>
 

@@ -32,7 +32,7 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>Company Description</h2>
+              <h2>Company Overview</h2>
               <p>
                 <strong>Capital Logistics Limited</strong> is a premier Malawian logistics solutions provider 
                 specializing in the transportation, warehousing, and distribution of high-volume 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = ({ title, subtitle, showButton = false }) => {
   return (
@@ -7,7 +8,9 @@ const Hero = ({ title, subtitle, showButton = false }) => {
         <h1>{title}</h1>
         <p>{subtitle}</p>
         {showButton && (
-          <button className="cta-button">Get In Touch</button>
+          <Link to="/contact" className="mobile-cta-button">
+  Get In Touch
+</Link>
         )}
       </div>
     </section>

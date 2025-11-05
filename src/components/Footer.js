@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer-logo">
               <Link to="/">
                 <img 
-                  src="/Logo.png" 
+                  src="/Blacklogo.png" 
                   alt="Capital Logistics Ltd" 
                   className="logo-image-footer"
                 />
@@ -31,16 +31,24 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <p>Anamwino Complex, City Centre</p>
             <p>P.O. Box 3186, Lilongwe</p>
-            <p>charlesmwale.mw@gmail.com</p>
+            <p>sales@cll.mw</p>
             <p>+265 0 999 150 433</p>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Capital Logistics Ltd. All rights reserved. | Registered under the Business Registration Act</p>
+          <p>
+  &copy; 2024 
+  <a href="https://www.capitallogistics.com" target="_blank" rel="noopener noreferrer" title="Visit Capital Logistics website"> Capital Logistics Ltd. </a> 
+  All rights reserved. | Developed by 
+  <a href="https://www.imperialsystems.com" target="_blank" rel="noopener noreferrer" title="Visit Imperial Systems website"> Imperial Systems </a> 
+  in collaboration with 
+  <a href="https://www.beleaenterprise.com" target="_blank" rel="noopener noreferrer" title="Visit Belea Enterprise website"> Belea Enterprise </a>
+</p>
+
         </div>
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
